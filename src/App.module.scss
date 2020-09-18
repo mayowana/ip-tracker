@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik';
+}
+
+.header {
+    background-image: url('./images/pattern-bg.png');
+    background-size: cover;
+    //height: 30vh;
+    color: white;
+
+    h1 {
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+}
+
+.search {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8.5rem;
+
+    input {
+        width: 30%;
+        padding: 1rem;
+        border: none;
+        border-bottom-left-radius: 1em;
+        border-top-left-radius: 1em;
+        outline: none;
+    }
+}
+
+.icon {
+    padding: 1rem;
+    background-color: black;
+    border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+        cursor: pointer;
+}
+
+.maincard {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 1em;
+    position: absolute;
+    z-index: 10;
+    top: 27.5%;
+    left: 10%;
+    background-color: white;
+}
+
+.cardbox {
+    width: 25%;
+}
+
+.cardname {
+    color: hsl(0, 0%, 59%);
+    padding: 1rem;
+}
+
+.cardbody {
+    color: hsl(0, 0%, 17%);
+    padding: 1rem;
+    font-size: 175%;
+}
+
+.border {
+    border-left: 1px solid hsl(0, 0%, 59%);
+        height: 70px;
+        margin: auto;
+    }
+
+.map{
+    background-color: blue;
+    height: 65vh;
+}
+
+@media only screen and (max-width: 600px) { 
+    .cardbody {
+        font-size: 125%;
+    }
+
+    .maincard {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        top: 19%;
+        width: 60%;
+        left: 20%;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .cardbox {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .cardname {
+        font-size: 80%;
+        padding: 0.5rem;
+    }
+
+    .cardbody {
+        font-size: 100%;
+    }
+
+    .maincard {
+        top: 23%;
+    }
+
+    .search {
+        input {
+        width: 70%;
+    }
+}
+
+.cardbox {
+    width: 90%;
+}
+}
